@@ -3,11 +3,11 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+body {
     background-color: #fdbf00;
-  }
-  .card {
+}
+.card {
     width: 640px;
     height: 400px;
     position: absolute;
@@ -19,63 +19,67 @@
     -webkit-perspective: 1200px;
     perspective: 1200px;
     transition: 1s;
-  }
-  .card:hover {
+}
+
+.card:hover {
     transform: rotate(-5deg);
-  }
-  .card:hover .outside {
+}
+.card:hover .outside {
     transform: rotateY(-130deg);
-  }
-  .outside,
-  .inside {
+}
+.outside,
+.inside {
     height: 100%;
     width: 50%;
     position: absolute;
     left: 50.1%;
-  }
-  .inside {
+}
+.inside {
     background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
-    line-height: 3;
-    padding: 0 20px;
+    line-height: 2;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    left: 50%;
-  }
-  .outside {
+}
+.outside {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: 1;
     transform-origin: left;
     transition: 2s;
     cursor: pointer;
-  }
-  .front,
-  .back {
+}
+.front,
+.back {
     height: 100%;
     width: 100%;
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateX(0deg);
-  }
-  .front {
+}
+.front {
     background-color: #ffffff;
-  }
-  .back {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #000046;
+}
+.back {
     transform: rotateY(180deg);
     background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
-  }
-  .cake {
+}
+.cake {
     width: 100%;
     position: absolute;
     bottom: 30px;
-  }
-  .top-layer,
-  .middle-layer,
-  .bottom-layer {
+}
+.top-layer,
+.middle-layer,
+.bottom-layer {
     height: 80px;
     width: 240px;
     background-repeat: repeat;
@@ -86,37 +90,37 @@
         #fedbab 50px,
         #fedbab 60px,
         transparent 60px
-      ),
-      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+    ),
+    radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
     border-radius: 10px 10px 0 0;
     position: relative;
     margin: auto;
-  }
-  .middle-layer {
+}
+.middle-layer {
     transform: scale(0.85);
     top: 6px;
-  }
-  .top-layer {
+}
+.top-layer {
     transform: scale(0.7);
     top: 26px;
-  }
-  .candle {
+}
+.candle {
     height: 45px;
     width: 15px;
     background: repeating-linear-gradient(
-      45deg,
-      #fd3018 0,
-      #fd3018 5px,
-      #ffa89e 5px,
-      #ffa89e 10px
+        45deg,
+        #fd3018 0,
+        #fd3018 5px,
+        #ffa89e 5px,
+        #ffa89e 10px
     );
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
     bottom: 202px;
-  }
-  .candle:before {
+}
+.candle:before {
     content: "";
     position: absolute;
     height: 16px;
@@ -126,16 +130,63 @@
     bottom: 48px;
     transform: rotate(45deg);
     left: -1px;
-  }
-  .outside p {
-    font-size: 23px;
-    text-transform: uppercase;
-    margin-top: 30px;
+}
+
+.outside p {
+    padding-top: 5px;
     text-align: center;
-    letter-spacing: 6px;
-    color: #000046;
-  }
-  .inside h1 {
-    font-size: 120px;
+    font-size: 1.3em;
+}
+.semii {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: bold;
+    color: #9d00ff;
+}
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000; /* Add your desired color here */
+}
+.comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000; /* Add your desired color here */
+}
+.comic-neue-light-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: italic;
+    color: #000000; /* Add your desired color here */
+}
+.comic-neue-regular-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: italic;
+    color: #000000; /* Add your desired color here */
+}
+.comic-neue-bold-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: italic;
+    color: #000000; /* Add your desired color here */
+}
+.gabriela-regular {
+    font-family: "Gabriela", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #681daf;
+}
+.playwrite-be-vlg-hanan {
+    font-family: "Playwrite BE VLG", cursive;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: #009974;
+}
+.inside h1 {
+    font-size: 1.3em;
     line-height: 120px;
-  }
+}
