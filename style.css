@@ -182,7 +182,7 @@ body {
 .playwrite-be-vlg-hanan {
     font-family: "Playwrite BE VLG", cursive;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 100; 
     font-style: normal;
     color: #009974;
 }
@@ -192,4 +192,5 @@ body {
     font-style: normal;
     font-size: 1.25em;
     color: #00FAE9;
+    text-shadow: 1px 1px 2px pink;
 }
